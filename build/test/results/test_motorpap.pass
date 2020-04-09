@@ -2,17 +2,17 @@
 :source:
   :path: test
   :file: test_motorpap.c
-:successes: []
-:failures:
-- :test: test_primermensaje
+:successes:
+- :test: test_InicilizacionBobinas
   :line: 22
-  :message: Empezamos
+  :message: ''
   :unity_test_time: 0
+:failures: []
 :ignores: []
 :counts:
   :total: 1
-  :passed: 0
-  :failed: 1
+  :passed: 1
+  :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0014779860000544431
+:time: 0.001364700000067387
