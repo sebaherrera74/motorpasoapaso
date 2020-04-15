@@ -10,7 +10,10 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_InicilizacionBobinas(void);
+extern void test_InicializacionBobinas(void);
+extern void test_ActivoSalidaUnaBobina(void);
+extern void test_TiempoActivacionBobina(void);
+extern void test_secuenciaClockWise(void);
 
 
 /*=======Mock Management=====*/
@@ -77,7 +80,10 @@ static void run_test(UnityTestFunction func, const char* name, int line_num)
 int main(void)
 {
   UnityBegin("test_motorpap.c");
-  run_test(test_InicilizacionBobinas, "test_InicilizacionBobinas", 22);
+  run_test(test_InicializacionBobinas, "test_InicializacionBobinas", 24);
+  run_test(test_ActivoSalidaUnaBobina, "test_ActivoSalidaUnaBobina", 31);
+  run_test(test_TiempoActivacionBobina, "test_TiempoActivacionBobina", 40);
+  run_test(test_secuenciaClockWise, "test_secuenciaClockWise", 47);
 
   return UnityEnd();
 }
