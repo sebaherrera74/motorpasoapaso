@@ -30,12 +30,12 @@ void test_InicializacionBobinas(void){
 
 void test_ActivoSalidaUnaBobina(void){
     uint8_t gpioVirtuales;
-    uint8_t numeroPaso=1;                   //variable numeo de pasos, son 4 pasos en el motor
+    uint8_t numeroPaso=4;                   //variable numeo de pasos, son 4 pasos en el motor2
                                             //unipolar en secuencia simple 
 
     bobinasCreate(&gpioVirtuales);   
     activoUnaBobina(numeroPaso);
-    TEST_ASSERT_EQUAL(0b0001,gpioVirtuales);
+    TEST_ASSERT_EQUAL(0b1000,gpioVirtuales);
 }
 
 void test_TiempoActivacionBobina(void){
@@ -46,7 +46,7 @@ void test_TiempoActivacionBobina(void){
 
 void test_secuenciaClockWise(void){
     int velocidad=100;
-    uint8_t numeroPaso=0;
+    uint8_t numeroPaso=4;
     uint8_t gpioVirtuales;
     bobinasCreate(&gpioVirtuales);   
     activoUnaBobina(numeroPaso);

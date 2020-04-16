@@ -11,10 +11,16 @@ void bobinasCreate(uint8_t *direccion){
 }
 
 void activoUnaBobina(uint8_t numeropaso){
-     *pasos=1<<numeropaso-1;
+    if (numeropaso>0 && numeropaso<=4){
+        *pasos=1<<numeropaso-1;
+    }
 }
 
+//funcion que activaria las bobinas en sentido de las agujas del reloj 
 void secuenciaCW(uint8_t numeropaso){
-    *pasos=1<<numeropaso;
+    if (numeropaso==4){
+        *pasos=0b0001;
+    }
+    else *pasos=1<<numeropaso;
     
 }

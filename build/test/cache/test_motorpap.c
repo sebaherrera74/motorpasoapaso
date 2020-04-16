@@ -46,7 +46,7 @@ void test_ActivoSalidaUnaBobina(void){
 
     uint8_t gpioVirtuales;
 
-    uint8_t numeroPaso=1;
+    uint8_t numeroPaso=4;
 
 
 
@@ -56,7 +56,7 @@ void test_ActivoSalidaUnaBobina(void){
 
     activoUnaBobina(numeroPaso);
 
-    UnityAssertEqualNumber((UNITY_INT)((0b0001)), (UNITY_INT)((gpioVirtuales)), (
+    UnityAssertEqualNumber((UNITY_INT)((0b1000)), (UNITY_INT)((gpioVirtuales)), (
 
    ((void *)0)
 
@@ -90,7 +90,7 @@ void test_secuenciaClockWise(void){
 
     int velocidad=100;
 
-    uint8_t numeroPaso=0;
+    uint8_t numeroPaso=4;
 
     uint8_t gpioVirtuales;
 
@@ -102,7 +102,7 @@ void test_secuenciaClockWise(void){
 
     secuenciaCW(numeroPaso);
 
-    UnityAssertEqualNumber((UNITY_INT)((0b0001)), (UNITY_INT)((gpioVirtuales)), (
+    UnityAssertEqualNumber((UNITY_INT)((0b1000)), (UNITY_INT)((gpioVirtuales)), (
 
    ((void *)0)
 
