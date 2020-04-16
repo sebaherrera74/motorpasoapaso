@@ -82,7 +82,7 @@ int main(void)
   UnityBegin("test_motorpap.c");
   run_test(test_InicializacionBobinas, "test_InicializacionBobinas", 24);
   run_test(test_ActivoSalidaUnaBobina, "test_ActivoSalidaUnaBobina", 31);
-  run_test(test_TiempoActivacionBobina, "test_TiempoActivacionBobina", 40);
+  run_test(test_TiempoActivacionBobina, "test_TiempoActivacionBobina", 41);
   run_test(test_secuenciaClockWise, "test_secuenciaClockWise", 47);
 
   return UnityEnd();

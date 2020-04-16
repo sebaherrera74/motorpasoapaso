@@ -37,18 +37,21 @@ void test_ActivoSalidaUnaBobina(void){
     activoUnaBobina(numeroPaso);
     TEST_ASSERT_EQUAL(0b0001,gpioVirtuales);
 }
+
 void test_TiempoActivacionBobina(void){
     int velocidad=50;
     velocidadGiro(velocidad);
     TEST_ASSERT_EQUAL(true,velocidadGiro(velocidad));
-
 }
 
 void test_secuenciaClockWise(void){
     int velocidad=100;
+    uint8_t numeroPaso=0;
     uint8_t gpioVirtuales;
     bobinasCreate(&gpioVirtuales);   
-    secuenciaCW(velocidad);
-    TEST_ASSERT_EQUAL(0b0010,gpioVirtuales);    
+    activoUnaBobina(numeroPaso);
+    velocidadGiro(velocidad);
+    secuenciaCW(numeroPaso);
+    TEST_ASSERT_EQUAL(0b0001,gpioVirtuales);    
 
 }

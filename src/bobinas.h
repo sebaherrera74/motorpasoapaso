@@ -2,4 +2,4 @@
  
 void bobinasCreate(uint8_t *direccion);
 void activoUnaBobina(uint8_t numeropaso);
-void secuenciaCW(int velocidad);
+void secuenciaCW(uint8_t numeropaso);
