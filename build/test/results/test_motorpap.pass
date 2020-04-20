@@ -4,23 +4,23 @@
   :file: test_motorpap.c
 :successes:
 - :test: test_InicializacionBobinas
-  :line: 24
+  :line: 25
   :message: ''
   :unity_test_time: 0
 - :test: test_ActivoSalidaUnaBobina
-  :line: 31
+  :line: 32
   :message: ''
   :unity_test_time: 0
 - :test: test_TiempoActivacionBobina
-  :line: 41
+  :line: 43
   :message: ''
   :unity_test_time: 0
 - :test: test_secuenciaClockWise
-  :line: 48
+  :line: 50
   :message: ''
   :unity_test_time: 0
 - :test: test_secuenciaInverClockWise
-  :line: 58
+  :line: 60
   :message: ''
   :unity_test_time: 0
 :failures: []
@@ -31,4 +31,4 @@
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.001266403000045102
+:time: 0.0016963420021056663

@@ -81,11 +81,11 @@ static void run_test(UnityTestFunction func, const char* name, int line_num)
 int main(void)
 {
   UnityBegin("test_motorpap.c");
-  run_test(test_InicializacionBobinas, "test_InicializacionBobinas", 24);
-  run_test(test_ActivoSalidaUnaBobina, "test_ActivoSalidaUnaBobina", 31);
-  run_test(test_TiempoActivacionBobina, "test_TiempoActivacionBobina", 41);
-  run_test(test_secuenciaClockWise, "test_secuenciaClockWise", 48);
-  run_test(test_secuenciaInverClockWise, "test_secuenciaInverClockWise", 58);
+  run_test(test_InicializacionBobinas, "test_InicializacionBobinas", 25);
+  run_test(test_ActivoSalidaUnaBobina, "test_ActivoSalidaUnaBobina", 32);
+  run_test(test_TiempoActivacionBobina, "test_TiempoActivacionBobina", 43);
+  run_test(test_secuenciaClockWise, "test_secuenciaClockWise", 50);
+  run_test(test_secuenciaInverClockWise, "test_secuenciaInverClockWise", 60);
 
   return UnityEnd();
 }

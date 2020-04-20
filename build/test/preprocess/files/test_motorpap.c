@@ -24,6 +24,8 @@ void tearDown(void){
 
 
 
+
+
 void test_InicializacionBobinas(void){
 
     uint8_t gpioVirtuales=0xF;
@@ -34,11 +36,11 @@ void test_InicializacionBobinas(void){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(27), UNITY_DISPLAY_STYLE_INT);
-
-
+   ), (UNITY_UINT)(28), UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
 
 
 
@@ -60,9 +62,11 @@ void test_ActivoSalidaUnaBobina(void){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(38), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(39), UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
 
 
 
@@ -80,7 +84,7 @@ void test_TiempoActivacionBobina(void){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(44), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(46), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -104,7 +108,7 @@ void test_secuenciaClockWise(void){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(54), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(56), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -128,6 +132,6 @@ void test_secuenciaInverClockWise(void){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(64), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(66), UNITY_DISPLAY_STYLE_INT);
 
 }
