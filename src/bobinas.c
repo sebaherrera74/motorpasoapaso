@@ -17,10 +17,23 @@ void activoUnaBobina(uint8_t numeropaso){
 }
 
 //funcion que activaria las bobinas en sentido de las agujas del reloj 
-void secuenciaCW(uint8_t numeropaso){
-    if (numeropaso==4){
-        *pasos=0b0001;
-    }
-    else *pasos=1<<numeropaso;
-    
+void secuenciaCW(int veloc,uint8_t cantPasos){
+    uint8_t aux=0;
+    uint16_t i;
+    for (i=0;i<cantPasos;i++){
+        aux=(4+i)%4;
+        activoUnaBobina(aux+1);
+        }
+        velocidadGiro(veloc);
+}
+
+//funcion que activaria las bobinas en sentido contrario de las agujas del reloj 
+void secuenciaCCW(int veloc,uint8_t cantPasos){
+    uint8_t aux=0;
+    uint16_t i;
+    for (i=0;i<=cantPasos;i++){
+        aux=(4-i)%4;
+        activoUnaBobina(aux+1);
+        }
+        velocidadGiro(veloc);
 }

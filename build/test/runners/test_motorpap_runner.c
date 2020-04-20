@@ -14,6 +14,7 @@ extern void test_InicializacionBobinas(void);
 extern void test_ActivoSalidaUnaBobina(void);
 extern void test_TiempoActivacionBobina(void);
 extern void test_secuenciaClockWise(void);
+extern void test_secuenciaInverClockWise(void);
 
 
 /*=======Mock Management=====*/
@@ -83,7 +84,8 @@ int main(void)
   run_test(test_InicializacionBobinas, "test_InicializacionBobinas", 24);
   run_test(test_ActivoSalidaUnaBobina, "test_ActivoSalidaUnaBobina", 31);
   run_test(test_TiempoActivacionBobina, "test_TiempoActivacionBobina", 41);
-  run_test(test_secuenciaClockWise, "test_secuenciaClockWise", 47);
+  run_test(test_secuenciaClockWise, "test_secuenciaClockWise", 48);
+  run_test(test_secuenciaInverClockWise, "test_secuenciaInverClockWise", 58);
 
   return UnityEnd();
 }

@@ -16,15 +16,19 @@
   :message: ''
   :unity_test_time: 0
 - :test: test_secuenciaClockWise
-  :line: 47
+  :line: 48
+  :message: ''
+  :unity_test_time: 0
+- :test: test_secuenciaInverClockWise
+  :line: 58
   :message: ''
   :unity_test_time: 0
 :failures: []
 :ignores: []
 :counts:
-  :total: 4
-  :passed: 4
+  :total: 5
+  :passed: 5
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0013293459996930324
+:time: 0.001266403000045102

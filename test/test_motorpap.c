@@ -44,14 +44,22 @@ void test_TiempoActivacionBobina(void){
     TEST_ASSERT_EQUAL(true,velocidadGiro(velocidad));
 }
 
+// Test Secuencia en sentido de las agujas del reloj 
 void test_secuenciaClockWise(void){
     int velocidad=100;
-    uint8_t numeroPaso=4;
+    uint8_t cantidadPasos=2;
     uint8_t gpioVirtuales;
     bobinasCreate(&gpioVirtuales);   
-    activoUnaBobina(numeroPaso);
-    velocidadGiro(velocidad);
-    secuenciaCW(numeroPaso);
-    TEST_ASSERT_EQUAL(0b0001,gpioVirtuales);    
+    secuenciaCW(velocidad,cantidadPasos); //funcion secuencia sentido agujas del reloj
+    TEST_ASSERT_EQUAL(0b0010,gpioVirtuales);    
 
+}
+//Test Secuencia en sentido inverso 
+void test_secuenciaInverClockWise(void){
+    int velocidad=100;
+    uint8_t cantidadPasos=4;
+    uint8_t gpioVirtuales;
+    bobinasCreate(&gpioVirtuales);   
+    secuenciaCCW(velocidad,cantidadPasos); //funcion secuencia sentido agujas del reloj
+    TEST_ASSERT_EQUAL(0b0001,gpioVirtuales);    
 }
