@@ -1,8 +1,18 @@
 #include "bobinas.h"
 #include "tick.h"
 
-static uint8_t *pasos;
+//  Secuencia de sentido horario 
+//             bobina A   bobina B   bobina C  bobina D    
+// numero paso
+//  paso 1         0         0         0         1 
+//  paso 2         0         0         1         0
+//  paso 3         0         1         0         0 
+//  paso 4         1         0         0         0
 
+
+
+
+static uint8_t *pasos;
 
 
 void bobinasCreate(uint8_t *direccion){

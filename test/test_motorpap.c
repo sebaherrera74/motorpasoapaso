@@ -21,13 +21,14 @@ void tearDown(void){
 
 }
 
+//Test de Inicializacion de las salidas a bobinas y puestas a cero
 void test_InicializacionBobinas(void){
     uint8_t gpioVirtuales=0xF;             //A los gpio(4) y los pongo en 1 
     bobinasCreate(&gpioVirtuales);         //funcion de creacion de las bobinas le paso la direccion de los gpio  
     TEST_ASSERT_EQUAL(0,gpioVirtuales);  
-
 }
 
+//Test de prueba de activar las bobinas en funcion del paso 
 void test_ActivoSalidaUnaBobina(void){
     uint8_t gpioVirtuales;
     uint8_t numeroPaso=4;                   //variable numeo de pasos, son 4 pasos en el motor2
@@ -38,6 +39,7 @@ void test_ActivoSalidaUnaBobina(void){
     TEST_ASSERT_EQUAL(0b1000,gpioVirtuales);
 }
 
+//Test de prueba de velocidad
 void test_TiempoActivacionBobina(void){
     int velocidad=50;
     velocidadGiro(velocidad);
